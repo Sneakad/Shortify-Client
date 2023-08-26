@@ -13,7 +13,7 @@ function App() {
 
   const addData = () => {
     setIsLoading(true)
-    axios.post('https://shortify96.herokuapp.com/create', { original: original }).then((result) => {
+    axios.post('https://srt-sgj4.onrender.com/create', { original: original }).then((result) => {
       console.log(result.data)
 
       setShorturl(result.data)
@@ -41,7 +41,7 @@ function App() {
       <div className='generated'>
         <h1>Your link will appear here</h1>
         {isLoading ? <img src={loader} alt="Loading ..." /> : <></>}
-        {!shorturl ? <></> : <a href={`https://shortify96.herokuapp.com/${shorturl}`} target="_blank" className='genlink' > shortify96.herokuapp.com/{shorturl}</a>}
+        {!shorturl ? <></> : <a href={`https://srt-sgj4.onrender.com/${shorturl}`} target="_blank" className='genlink' > shortify96.herokuapp.com/{shorturl}</a>}
         {!shorturl ? <></> : <CopyToClipboard text={`https://shortify96.herokuapp.com/${shorturl}`}>
           <button id='copy'>Copy</button>
         </CopyToClipboard>}

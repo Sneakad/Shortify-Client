@@ -41,8 +41,8 @@ function App() {
       <div className='generated'>
         <h1>Your link will appear here</h1>
         {isLoading ? <img src={loader} alt="Loading ..." /> : <></>}
-        {!shorturl ? <></> : <a href={`https://srt-sgj4.onrender.com/${shorturl}`} target="_blank" className='genlink' > shortify96.herokuapp.com/{shorturl}</a>}
-        {!shorturl ? <></> : <CopyToClipboard text={`https://shortify96.herokuapp.com/${shorturl}`}>
+        {!shorturl ? <></> : <a href={`https://srt-sgj4.onrender.com/${shorturl}`} target="_blank" className='genlink' > srt-sgj4.onrender.com/{shorturl}</a>}
+        {!shorturl ? <></> : <CopyToClipboard text={`srt-sgj4.onrender.com/${shorturl}`}>
           <button id='copy'>Copy</button>
         </CopyToClipboard>}
 
